@@ -1,0 +1,16 @@
+syntax = "proto3";
+package chatTool;
+option go_package = "../chatTool;chatTool";
+
+message Request {
+  string member = 1;
+  string key = 2;
+}
+
+message Response {
+  bytes value = 1;
+}
+
+service ChatTool {
+  rpc Get(Request) returns (Response);
+}

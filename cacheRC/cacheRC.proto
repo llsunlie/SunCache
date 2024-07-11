@@ -1,0 +1,15 @@
+syntax = "proto3";
+package chatTool;
+option go_package = "../cacheRC;cacheRC";
+
+message Request {
+  string socket = 1;
+}
+
+message Response {
+  string message = 1;
+}
+
+service CacheRC {
+  
+}
